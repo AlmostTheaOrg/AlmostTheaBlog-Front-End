@@ -32,7 +32,7 @@ html, body {
   margin: 0 auto;
 }
 
-.header-container .fa {
+.header-container .fa, .footer-container .fa {
   display: inline-block;
   margin-left: 30px;
   padding: 10px;
@@ -55,7 +55,7 @@ html, body {
   border-radius: 50%;
 }
 
-.brand-name span:hover, .header-container .fa:hover {
+.brand-name span:hover, .header-container .fa:hover, .footer-container .fa:hover {
   cursor: pointer;
   background-color: #C786CF;
 }
@@ -227,21 +227,12 @@ footer {
   display: flex;
   justify-content: flex-start;
   text-align: center;
-  padding: 30px;
+  padding: 20px 0;
 }
 
 .footer-container .fa {
   height: 100%;
-  padding: 10px;
-  width: 14px;
-  transition: background-color 1s;
-  border-radius: 50%;
   margin-left: 20px;
-}
-
-.footer-container .fa:hover {
-  background-color: #C786CF;
-  cursor: pointer;
 }
 
 .copyright {
