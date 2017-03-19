@@ -76,6 +76,10 @@ html, body {
   color: inherit;
 }
 
+.nav-bar a:first-of-type {
+  padding-left: 0px;
+}
+
 .nav-bar ul {
   width: 100%;
   padding-left: 0;
@@ -117,4 +121,131 @@ html, body {
   border-style: none;
   border: none;
   padding: 0 6px;
+}
+
+.posts {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post {
+  max-width: calc(33% - 5px);
+  max-height: 240px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.post-layout-img {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.post .description {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  z-index: 10;
+  transition: bottom 0.3s ease;
+}
+
+.post:hover .description {
+  bottom: 80px;
+}
+
+.description h3 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post .img-desc {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.post .date {
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+#dare {
+  background-color: #c2f6ea;
+}
+
+.pagination-container {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  z-index: 15;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.text-link {
+  display: inline-block;
+  padding: 0 15px;
+  color: inherit;
+}
+
+.page-numbers {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pagination-container ul {
+  margin: 20px auto;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-container .fa {
+  height: 100%;
+  padding: 10px;
+  width: 14px;
+  transition: background-color 1s;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.footer-container .fa:hover {
+  background-color: #C786CF;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: left;
+  align-self: flex-start;
+  flex-grow: 1;
 }
