@@ -93,6 +93,10 @@ html, body {
   display: inline-block;
 }
 
+.nav-bar li:hover a {
+  font-weight: bold
+}
+
 .nav-bar .search-box {
   display: flex;
   flex-direction: row;
